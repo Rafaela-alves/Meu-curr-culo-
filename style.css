@@ -46,22 +46,22 @@ button {
   margin: 5px;                       /* Espaçamento externo */
   padding: 10px 15px;                /* Espaçamento interno */
   background-color: #3498db;         /* Cor de fundo azul */
-  color: black;                      /* Cor do texto */
-  border: none;                      /* Remove borda padrão */
+  color: white;                      /* Texto branco */
+  border: 2px solid #000000;         /* Borda preta */
   border-radius: 5px;                /* Cantos arredondados */
   cursor: pointer;                   /* Muda cursor para pointer */
   transition: background-color 0.3s; /* Transição suave de cor */
 }
 
 button:hover {
-  background-color: #D81B60;        /* Cor mais escura no hover */
+  background-color: #D81B60;  /* Rosa escuro no hover */
 }
 
 /* ===== SEÇÕES DE CONTEÚDO ===== */
 section {
   max-width: 800px;                 /* Largura máxima */
   margin: 20px auto;                /* Centraliza na página */
-  background-color: white;          /* Fundo branco */
+  background-color:#000000;         /* Fundo preto */
   padding: 20px;                    /* Espaçamento interno */
   border-radius: 8px;               /* Cantos arredondados */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
@@ -69,7 +69,7 @@ section {
 
 /* Títulos das seções */
 h2 {
-  color: #2c3e50;                   /* Cor azul escuro */
+  color: #F8BBD0;                   /* Rosa claro */
   border-bottom: 2px solid #3498db; /* Linha inferior azul */
   padding-bottom: 5px;              /* Espaço entre texto e linha */
   margin-bottom: 15px;              /* Margem inferior */
