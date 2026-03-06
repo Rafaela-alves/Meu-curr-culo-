@@ -10,7 +10,7 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-  background-color: #f5f7fa;         /* Cor de fundo azul escuro */
+  background-color: #F8BBD0;         /* Cor de fundo azul escuro */
   color: black;                      /* Cor do texto */
   padding: 20px;                     /* Espaçamento interno */
   display: flex;                     /* Ativa flexbox para alinhamento */
