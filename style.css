@@ -4,7 +4,7 @@ body {
   margin: 0;                         /* Remove margens padrão do navegador */
   padding: 0;                        /* Remove paddings padrão */
   background-color: #f5f7fa;         /* Cor de fundo clara padrão */
-  color: #333;                       /* Cor do texto principal */
+  color: white;                      /* Texto branco nos títulos */
   line-height: 1.6;                  /* Espaçamento entre linhas */
 }
 
