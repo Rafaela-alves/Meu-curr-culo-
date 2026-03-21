@@ -1,147 +1,146 @@
 /* ===== ESTILOS GERAIS ===== */
 body {
-  font-family: 'Arial', sans-serif;  /* Fonte padrão */
-  margin: 0;                         /* Remove margens padrão do navegador */
-  padding: 0;                        /* Remove paddings padrão */
-  background-color: #e1f5fe;         /* Azul claro */
-  color: #424242;                    /* Texto em cinza escuro */
-  line-height: 1.6;                  /* Espaçamento entre linhas */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0;       /* Rosa claro */
+  color: #1a1a1a;                  /* Preto suave */
+  line-height: 1.6;
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-  background-color: #81D4FA;         /* Azul Claro */
-  color: #fff;                       /* Texto branco */
-  padding: 20px;                      /* Espaçamento interno */
-  display: flex;                      /* Ativa flexbox para alinhamento */
-  justify-content: space-between;     /* Espaço entre elementos */
-  align-items: center;                /* Centraliza verticalmente */
-  flex-wrap: wrap;                    /* Permite quebra de linha em telas pequenas */
-  box-sizing: border-box;             /* Garante que padding não afete a largura total */
+  background-color: #ff66b2;       /* Rosa forte */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 /* Container do conteúdo do header */
 .header-content {
-  display: flex;                     /* Layout flex para imagem + texto */
-  align-items: center;               /* Alinha itens verticalmente */
-  gap: 15px;                         /* Espaço entre imagem e texto */
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 /* Estilo da imagem de perfil */
 .profile-img {
-  width: 80px;                      /* Largura fixa */
-  height: 80px;                     /* Altura fixa (igual à largura para formar círculo) */
-  border-radius: 50%;                /* Torna a imagem circular */
-  object-fit: cover;                 /* Garante que a imagem preencha o espaço sem distorcer */
-  border: 3px solid #FFAB91;         /* Borda coral suave */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* Sombra suave */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff99cc;       /* Rosa suave */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra suave preta */
 }
 
 /* Container do texto no header */
 .header-text {
-  text-align: left;                  /* Alinhamento à esquerda */
+  text-align: left;
 }
 
 /* ===== BOTÕES ===== */
 button {
-  margin: 5px;                       /* Espaçamento externo */
-  padding: 10px 15px;                /* Espaçamento interno */
-  background-color: #FFAB91;         /* Coral suave */
-  color: #fff;                       /* Texto branco */
-  border: 2px solid #4caf50;         /* Borda verde menta */
-  border-radius: 5px;                /* Cantos arredondados */
-  cursor: pointer;                   /* Muda cursor para pointer */
-  transition: background-color 0.3s; /* Transição suave de cor */
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #ff99cc;       /* Rosa suave */
+  color: #fff;
+  border: 2px solid #1a1a1a;       /* Borda preta */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #FF8A65;         /* Coral mais forte no hover */
+  background-color: #ff66b2;       /* Rosa forte no hover */
 }
 
 /* ===== SEÇÕES DE CONTEÚDO ===== */
 section {
-  max-width: 800px;                  /* Largura máxima */
-  margin: 20px auto;                 /* Centraliza na página */
-  background-color: #ffffff;         /* Fundo branco */
-  padding: 20px;                     /* Espaçamento interno */
-  border-radius: 8px;                /* Cantos arredondados */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra suave */
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff0f5;       /* Rosa bem claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Títulos das seções */
 h2 {
-  color: #FF8A65;                    /* Coral mais forte */
-  border-bottom: 2px solid #81D4FA;  /* Linha inferior azul claro */
-  padding-bottom: 5px;               /* Espaço entre texto e linha */
-  margin-bottom: 15px;               /* Margem inferior */
+  color: #ff66b2;                  /* Rosa forte */
+  border-bottom: 2px solid #ff99cc; /* Linha inferior rosa suave */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /* Listas */
 ul {
-  padding-left: 20px;                /* Recuo para alinhar marcadores */
-  list-style-type: circle;           /* Estilo dos marcadores */
+  padding-left: 20px;
+  list-style-type: circle;
 }
 
 /* ===== RODAPÉ ===== */
 footer {
-  text-align: center;                /* Centraliza texto */
-  padding: 15px;                     /* Espaçamento interno */
-  background-color: #81D4FA;         /* Azul Claro */
-  color: white;                      /* Texto branco */
-  margin-top: 30px;                  /* Espaço acima do rodapé */
+  text-align: center;
+  padding: 15px;
+  background-color: #ff66b2;       /* Rosa forte */
+  color: #fff;
+  margin-top: 30px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 600px) {
-  /* Ajustes para telas pequenas */
   header {
-    flex-direction: column;         /* Empilha elementos verticalmente */
-    text-align: center;              /* Centraliza texto */
+    flex-direction: column;
+    text-align: center;
   }
   
   .header-content {
-    flex-direction: column;        /* Empilha imagem e texto */
-    gap: 10px;                     /* Reduz espaço entre elementos */
-    margin-bottom: 15px;           /* Espaço antes dos botões */
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
   }
   
   section {
-    margin: 10px;                  /* Reduz margens laterais */
-    padding: 15px;                 /* Reduz padding interno */
+    margin: 10px;
+    padding: 15px;
   }
 }
 
 /* ===== MODO ESCURO ===== */
 body.dark-mode {
-  background-color: #263238;       /* Fundo escuro azul suave */
-  color: #e0e0e0;                  /* Texto claro */
+  background-color: #1a1a1a;       /* Preto */
+  color: #ffe6f0;                  /* Rosa claro para contraste */
 }
 
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #37474f;       /* Fundo verde escuro */
+  background-color: #000000;       /* Preto sólido */
 }
 
 body.dark-mode section {
-  background-color: #455a64;       /* Fundo cinza escuro para seções */
-  color: #e0e0e0;                  /* Texto claro */
+  background-color: #333333;       /* Cinza escuro */
+  color: #ffe6f0;                  /* Texto rosa claro */
 }
 
 body.dark-mode h2 {
-  color: #FF8A65;                  /* Títulos em coral suave */
-  border-color: #81D4FA;           /* Linha inferior azul claro */
+  color: #ff66b2;                  /* Rosa forte */
+  border-color: #ff99cc;           /* Linha rosa suave */
 }
 
 body.dark-mode button {
-  background-color: #81D4FA;       /* Botões em azul claro */
-  color: #fff;                     /* Texto branco */
+  background-color: #ff99cc;       /* Rosa suave */
+  color: #1a1a1a;                  /* Texto preto */
 }
 
 body.dark-mode button:hover {
-  background-color: #64B5F6;       /* Azul mais forte no hover */
+  background-color: #ff66b2;       /* Rosa forte no hover */
 }
 
 body.dark-mode .profile-img {
-  border-color: #64B5F6;           /* Borda azul no modo escuro */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Sombra mais visível */
+  border-color: #ff66b2;           /* Borda rosa forte */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
